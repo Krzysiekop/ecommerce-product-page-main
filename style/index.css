@@ -1,0 +1,185 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 1440px;
+  margin: 0 auto;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 14rem;
+  height: 10rem;
+  border-bottom: 1px solid hsl(220, 14%, 75%);
+}
+
+.nav__logo {
+  height: 2rem;
+}
+
+.nav__left {
+  display: flex;
+  gap: 5rem;
+}
+
+.nav__right_avatar {
+  width: 5.2rem;
+}
+
+.nav__list li {
+  display: inline;
+  padding: 0 2rem;
+}
+
+.nav__list li:hover {
+  border-bottom: 4px solid hsl(26, 100%, 55%);
+  padding-bottom: 4rem;
+}
+
+.nav__list a {
+  text-decoration: none;
+  color: grey;
+}
+
+.nav__right {
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+}
+
+main {
+  padding: 10rem 22rem;
+  height: 80vh;
+}
+
+.product__image {
+  width: 84%;
+  border-radius: 2rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.content__left {
+  text-align: end;
+}
+
+.product__thumbnail {
+  width: 15%;
+  border-radius: 1rem;
+  margin-left: 3.6rem;
+}
+
+.product__thumbnails {
+  padding-top: 2rem;
+}
+.content__right {
+  padding-left: 8rem;
+  padding-top: 8rem;
+}
+
+.content__right_h2 {
+  color: hsl(26, 100%, 55%);
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.content__right_h1 {
+  font-size: 4.4rem;
+}
+
+.content__right_para {
+  color: gray;
+  line-height: 1.5;
+  padding: 2rem 0;
+}
+
+.price__after_discount {
+  font-size: 2.2rem;
+}
+
+.price__full {
+  font-size: 1.4rem;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.buttons {
+  display: flex;
+  gap: 4rem;
+}
+
+.buttons__left {
+  padding: 1rem 1rem;
+  background-color: hsl(223, 64%, 98%);
+  width: 14rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button__minus {
+  color: hsl(26, 100%, 55%);
+  cursor: pointer;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.button__plus {
+  color: hsl(26, 100%, 55%);
+  cursor: pointer;
+  padding: 0 1rem;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.button__zero {
+  font-weight: 700;
+  align-items: center;
+}
+
+.price__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.price__discount {
+  padding: 0.5rem;
+  background-color: hsl(25, 100%, 94%);
+  color: hsl(26, 100%, 55%);
+  font-weight: 700;
+}
+
+.buttons__right {
+  padding: 1rem 6rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  color: white;
+  background-color: hsl(26, 100%, 55%);
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+.buttons {
+  padding-top: 3rem;
+}
