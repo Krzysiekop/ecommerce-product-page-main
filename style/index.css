@@ -80,13 +80,13 @@ main {
 }
 
 .content__left {
-  text-align: end;
+  text-align: center;
 }
 
 .product__thumbnail {
   width: 15%;
   border-radius: 1rem;
-  margin-left: 3.6rem;
+
 }
 
 .active {
@@ -96,6 +96,8 @@ main {
 
 .product__thumbnails {
   padding-top: 2rem;
+  display: flex;
+  justify-content: space-evenly;
 }
 .content__right {
   padding-left: 8rem;

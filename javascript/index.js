@@ -1,11 +1,14 @@
 const productThumbinails = document.querySelectorAll(".product__thumbnail");
+const productImage = document.querySelector(".product__image");
 
-productThumbinails.forEach((productThumbinail) => {
+productThumbinails.forEach((productThumbinail, index) => {
   productThumbinail.addEventListener("click", function () {
     productThumbinails.forEach((productThumbinail) => {
       productThumbinail.classList.remove("active");
     });
+
     productThumbinail.classList.add("active");
+    productImage.style.content = `url("../images/image-product-${index+1}.jpg")`;
   });
 });
 
