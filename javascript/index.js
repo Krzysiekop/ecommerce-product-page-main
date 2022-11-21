@@ -8,7 +8,7 @@ productThumbinails.forEach((productThumbinail, index) => {
     });
 
     productThumbinail.classList.add("active");
-    productImage.style.content = `url("../images/image-product-${index+1}.jpg")`;
+    productImage.style.content = `url("images/image-product-${index+1}.jpg")`;
   });
 });
 
