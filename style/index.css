@@ -87,12 +87,11 @@ main {
 .product__thumbnail {
   width: 15%;
   border-radius: 1rem;
-
 }
 
 .active {
-    border: 3px solid hsl(26, 100%, 55%);
-    opacity: .5;
+  border: 3px solid hsl(26, 100%, 55%);
+  opacity: 0.5;
 }
 
 .product__thumbnails {
@@ -195,14 +194,14 @@ main {
 }
 
 .buttons__right:hover {
-    opacity: 0.5;
+  opacity: 0.5;
 }
 
 .buttons {
   padding-top: 3rem;
 }
 
-.cart{
+.cart {
   display: none;
   position: absolute;
   top: 5rem;
@@ -212,41 +211,42 @@ main {
   width: 30rem;
   height: 20rem;
   padding: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-.cart__head{
+.cart__head {
   font-weight: 700;
   font-size: 1.6rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid gray;
 }
 
-.cart__inventory--empty{
+.cart__inventory--empty {
   display: flex;
   justify-content: center;
   padding-top: 5rem;
 }
 
-.cart__inventory--full{
+.cart__inventory--full {
   display: none;
 
   padding-top: 1rem;
 }
 
-.cart__quantity{
+.cart__quantity {
   position: absolute;
   font-size: 1.3rem;
   top: 1rem;
   left: 2rem;
   color: white;
-  background-color:  hsl(26, 100%, 55%);
-  padding: 0  .5rem;
+  background-color: hsl(26, 100%, 55%);
+  padding: 0 0.5rem;
   border-radius: 50%;
   display: none;
 }
 
-.cart__product{
+.cart__product {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -254,11 +254,11 @@ main {
   line-height: 1.6;
   margin-bottom: 2rem;
 }
-.cart__product--image{
+.cart__product--image {
   width: 6rem;
 }
 
-.cart__checkout{
+.cart__checkout {
   padding: 1rem 11rem;
   display: flex;
   align-items: center;
@@ -270,19 +270,81 @@ main {
   font-weight: 700;
 }
 
-.cart__checkout:hover{
-  opacity: .5;
+.cart__checkout:hover {
+  opacity: 0.5;
 }
 
-.full__price{
+.full__price {
   font-weight: 700;
 }
 
-.bold{
+.bold {
   font-weight: 700;
 }
 
-.bold__fontsize22{
+.bold__fontsize22 {
   font-weight: 700;
   font-size: 2.2rem;
+}
+
+.slider {
+  z-index: 10;
+  position: absolute;
+  top: 10rem;
+  left: 29%;
+  display: none;
+}
+
+.slider__image {
+  width: 60rem;
+}
+
+.slider__next {
+  position: absolute;
+  top: 37%;
+  font-size: 22rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 50%;
+  right: -2rem;
+}
+
+.slider__previous {
+  position: absolute;
+  top: 37%;
+  font-size: 22rem;
+  background: white;
+  padding: 1rem;
+  border-radius: 50%;
+  left: -2rem;
+}
+
+.slider__close {
+  position: absolute;
+  top: 0;
+  font-size: 32rem;
+  padding: 1rem;
+  right: 0rem;
+  width: 6rem;
+}
+
+.slider__thumbnail {
+  width: 14rem;
+}
+
+.slider__thumbnails {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 1rem;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: hsl(0, 0%, 0%);
+  opacity: 0.8;
+  display: none;
 }

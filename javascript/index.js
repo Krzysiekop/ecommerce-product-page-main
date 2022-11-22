@@ -50,7 +50,7 @@ cartButton.addEventListener("click", function () {
   }
 });
 
-//Handle add to cart
+//Handle add product to cart
 const cartQuantity = document.querySelector(".cart__quantity");
 const price = document.querySelector('.price__after_discount').textContent;
 
@@ -80,4 +80,43 @@ deleteProduct.addEventListener("click", function(){
   cartQuantity.textContent = quantityValue;
   cartQuantity.style.display = "none";
 })
+
+
+
+
+///////////////////////////////// SLAIDER
+
+const sliderThumbinails = document.querySelectorAll(".slider__thumbnail");
+const sliderImage = document.querySelector(".slider__image");
+const closeSlider = document.querySelector('.slider__close');
+const slider = document.querySelector('.slider')
+const overlay = document.querySelector('.overlay')
+const nextImage = document.querySelector('.slider__next')
+
+
+sliderThumbinails.forEach((sliderThumbinail, index) => {
+  sliderThumbinail.addEventListener("click", function () {
+    sliderThumbinails.forEach((sliderThumbinail) => {
+      sliderThumbinail.classList.remove("active");
+    });
+    sliderThumbinail.classList.add("active");
+    sliderImage.style.content = `url("images/image-product-${index + 1}.jpg")`;
+  });
+});
+
+// nextImage.addEventListener("click", function () {
+//   sliderImage.style.content = `url("images/image-product-${index + 1}.jpg")`;
+// });
+
+closeSlider.addEventListener("click", function () {
+  slider.style.display = 'none';
+  overlay.style.display = 'none';
+});
+
+productImage.addEventListener("click", function () {
+  slider.style.display = 'block';
+  overlay.style.display = 'block';
+});
+
+
 
