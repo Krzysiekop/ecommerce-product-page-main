@@ -56,6 +56,30 @@
           alt="avatar"
           srcset=""
         />
+        <div class="cart">
+          <p class="cart__head">Cart</p>
+          <p class="cart__inventory--empty">Your cart is empty.</p>
+          <div class="cart__inventory--full">
+            <div class="cart__product">
+              <img
+                class="cart__product--image"
+                src="images/image-product-1-thumbnail.jpg"
+                alt="product1"
+              />
+              <div class="flex__wrap">
+                <p>Fall Limited Edition Sneakers</p>
+                <p>
+                  $125.00 x <span class="product__quantity">3</span>
+                  <span class="bold">$</span
+                  ><span class="full__price">375.00</span>
+                </p>
+              </div>
+              <img class="cart__delete" src="images/icon-delete.svg" alt="" srcset="" />
+            </div>
+            <button class="cart__checkout">Checkout</button>
+          </div>
+        </div>
+        <div class="cart__quantity">0</div>
       </div>
     </nav>
     <main>
@@ -95,7 +119,8 @@
           </p>
           <div class="price">
             <div class="price__wrapper">
-              <p class="price__after_discount">$125.00</p>
+              <span class="bold__fontsize22">$</span>
+              <p class="price__after_discount">125.00</p>
               <p class="price__discount">50%</p>
             </div>
             <p class="price__full">$250.00</p>
