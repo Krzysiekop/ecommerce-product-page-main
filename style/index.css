@@ -38,6 +38,14 @@ nav {
   width: 5.2rem;
 }
 
+.nav__right_cart{
+  fill: #69707D;
+}
+
+.nav__right_cart:hover {
+  fill: black;
+}
+
 .nav__right_avatar:hover {
   border-radius: 50%;
   border: 3px solid hsl(26, 100%, 55%);
@@ -50,7 +58,7 @@ nav {
 
 .nav__list li:hover {
   border-bottom: 4px solid hsl(26, 100%, 55%);
-  padding-bottom: 4rem;
+  padding-bottom: 3.5rem;
 }
 
 .nav__list a {
@@ -87,6 +95,10 @@ main {
 .product__thumbnail {
   width: 15%;
   border-radius: 1rem;
+}
+
+.product__thumbnail:hover{
+  opacity: 0.5;
 }
 
 .active {
