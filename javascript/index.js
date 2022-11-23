@@ -93,8 +93,10 @@ const previousImage = document.querySelector(".slider__previous");
 
 //show slider after click on product image
 productImage.addEventListener("click", function () {
+  if(window.innerWidth>1100){
   slider.style.display = "block";
   overlay.style.display = "block";
+  }
 });
 
 let actualSlide = 1;
